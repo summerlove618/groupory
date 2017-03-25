@@ -73,21 +73,26 @@
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 id="homeHeading"><br><strong>groupory</strong>
-        </h1><p>Share your special moments with other members.</p>
+        </h1><p>Share your special moments with other members</p>
                 <hr>
                  <form class="form-signin">
         <br><br>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus><br><br>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <div class="checkbox">
+         <form class="new_user" id="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="VFed30EhLIaZQyOVeaRiGx8eg4W63ErxxFPn8dTkpEtX6XEadn8uvAZBMkYSj/0b/0wtzxSnd3HoBl2u8f3UYA==" />
+        <div class="field">
+        <label for="user_email">Username </label>
+          <input autofocus="autofocus" type="email" value="" name="user[email]" id="user_email" /><br><br>
+           </div>
+           <div class="field">
+               <label for="user_password">Password.</label>
+          <input type="password" name="user[password]" id="user_password" aria-label="..."/>
+          </div><div class="checkbox">
           <label>
             <br><input type="checkbox" value="remember-me"> Remember me
           </label>
         </div><br>
         <button class="btn btn-primary btn-xl page-scroll" type="submit">Sign in</button>
       </form><br><br>
+      
   </div>
         </div>
     </header>
